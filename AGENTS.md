@@ -1,5 +1,13 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Cat Website Project Instructions
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+- This is a personal cat website built with Next.js App Router, TypeScript, and Tailwind CSS.
+- Main homepage file is `app/page.tsx`.
+- Global styles are in `app/globals.css`.
+- App metadata/layout is in `app/layout.tsx`.
+- Static assets go in `public/`.
+- Use `npm run dev` to run locally.
+- Use `npm run build` to verify production build.
+- Keep the design cute, polished, mobile-friendly, and simple.
+- Avoid adding new dependencies unless necessary.
+- After making code changes, explain what changed and why.
+- Prefer readable code over clever abstractions.
