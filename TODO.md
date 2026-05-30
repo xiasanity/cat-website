@@ -1,37 +1,45 @@
-# Cat Website TODO
+# Cat Journal TODO
 
-## Homepage polish
-- Refine spacing, colors, and typography after seeing the page with real photos.
-- Add small visual details that feel cute without making the page busy.
+## Weekly Data
+- Create a simple TypeScript data file for weekly entries.
+- Define fields for slug, week date, title, Miso photo/caption, Dashi photo/caption, optional summary, and optional Instagram feature.
 
-## Real cat photos
-- Choose 4-8 favorite photos for the hero and gallery.
-- Add optimized images to `public/`.
-- Replace placeholder boxes with real image cards.
+## Homepage
+- Update the homepage to introduce Miso and Dashi as a weekly journal.
+- Feature the latest weekly entry prominently.
+- Keep a small, simple path to the archive.
 
-## Cat profile details
-- Add short bios for Miso and Dashi.
-- Include favorite activities, favorite nap spots, and signature chaos habits.
+## Weekly Entry Pages
+- Add `app/weeks/[slug]/page.tsx`.
+- Show the week title, date, both cats' photos/captions, summary, and Instagram feature when present.
 
-## Instagram/caption section
-- Replace sample captions with favorites.
-- Consider adding a small rotating list or featured caption.
+## Archive
+- Add `app/archive/page.tsx`.
+- List all weekly entries in reverse chronological order.
+- Make each entry link to its individual week page.
 
-## Mobile responsiveness
-- Test the page on small phones, tablets, and desktop widths.
-- Check that headings, cards, and gallery images never feel cramped.
+## Photos
+- Store photos in `public/`.
+- Use Next.js `Image` for all journal photos.
+- Keep hero/profile/gallery images from duplicating weekly content unnecessarily.
 
-## SEO/page metadata
-- Confirm page title and description.
-- Add a social preview image when final photos are ready.
+## Instagram Highlight
+- Pick one featured photo/caption per week for Instagram.
+- Make it clear that Instagram is the highlight reel and the site is the full archive.
 
-## Future Vercel deployment
+## Mobile Responsiveness
+- Test homepage, archive, and weekly pages on small screens.
+- Keep photo layouts readable and captions comfortable on mobile.
+
+## SEO And Metadata
+- Update page titles and descriptions for the journal direction.
+- Add social preview metadata after choosing a stable featured image.
+
+## Deployment
 - Run `npm run build` before deploying.
-- Create a Vercel project and connect the repository.
-- Confirm production URL, metadata, and image loading after deploy.
+- Deploy to Vercel after homepage, archive, and at least one weekly entry are ready.
 
-## Nice-to-have ideas
-- Add a tiny timeline of memorable cat moments.
-- Add favorite toy rankings.
-- Add a seasonal photo section.
-- Add a lightweight guestbook or links section.
+## Nice-To-Have Ideas
+- Add tags like chaos, cozy, cardboard, and zoomies.
+- Add a yearly recap page.
+- Add a random week or favorite memory button.
